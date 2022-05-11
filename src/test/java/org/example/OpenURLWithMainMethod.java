@@ -12,7 +12,6 @@ public class OpenURLWithMainMethod {
         driver.get("https://www.argos.co.uk/");
         driver.manage().window().maximize();
         Thread.sleep(5000);
-
         driver.close();
     }
 }
