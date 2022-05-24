@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.nio.channels.SelectableChannel;
 import java.sql.Driver;
 
 public class Registration {
@@ -47,6 +48,7 @@ public class Registration {
         findEmailBox.sendKeys(email);
 //        findEmailBox.sendKeys(firstName+randomNumber+"@"+firstName+".co.uk");
 //        System.out.println(findEmailBox);
+
         driver.findElement(By.id("Password")).sendKeys(password);
         driver.findElement(By.id("ConfirmPassword")).sendKeys(confirmPassword);
         driver.findElement(By.id("register-button")).submit();
