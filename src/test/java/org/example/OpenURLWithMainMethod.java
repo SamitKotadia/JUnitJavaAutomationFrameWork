@@ -9,7 +9,7 @@ public class OpenURLWithMainMethod {
         WebDriver driver;
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        driver.get("https://www.argos.co.uk/");
+        driver.get("https://admin-demo.nopcommerce.com/login");
         driver.manage().window().maximize();
         Thread.sleep(5000);
         driver.close();
